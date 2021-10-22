@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<script src="lander.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="anime.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<title>Brandy Thomas - Real Estate</title>
+</head>
+<body onload="document.body.style.opacity='1'">
+<div class="outer">
+
+<header>
+	<div class="hero_container">
+		<img src="primary_again-02.jpg" alt="Brandy Thomas Real Estate Logo - Where coastal living in Southwest Florida comes home.">
+	</div>
+</header>
+
+	<div class="section1-container">
+			<img id="mobile_beach" src="beach-section1-alt.jpg" alt="beach image">
+			<h1 class='find_your_paradise'>Find your paradise.</h1>
+			<a href="#invis-page1"><img id='downarrow' src='chevron_recolored.svg' alt='down arrow'></a>
+			<div id='invis-page1'></div>
+	</div>	
+
+	<div class='section2-container'>
+
+		<h2 id='section2-title'>Lorem ipsum dolor.</h2>
+		<p class='intro-paragraph'> Sit amet, consectetur adipiscing elit. Quisque molestie, erat sed efficitur elementum, quam ex euismod dui, at luctus sapien lectus et lacus. Donec venenatis varius diam, at eleifend ligula tincidunt eu. Quisque molestie, erat sed efficitur elementum, quam ex euismod dui, at luctus sapien lectus et.</p>
+		<button id='learn-more'><h3>View Listings</h3></button>
+
+	</div>
+
+		<div class='section3-container'>
+			<form class='contact-form'>
+				<h2>Let's get in touch.</h2>
+				<input type='text' placeholder="Full Name..."></input>
+				<input type='text' placeholder="Email Address..."></input>
+				<input type='text' placeholder="Phone # (Optional)..."></input>
+				<textarea style='width:80%; height: 55%; margin:20px'></textarea>
+				<input id='submit' type='submit'></button>
+			</form>	
+		</div>
+
+	</div>
+
+
+<!---Find Your Paradise Animation (Below) --->
+<script>
+	 var textWrapper = document.querySelector('.find_your_paradise');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.find_your_paradise .letter',
+      translateY: [40,0],
+      translateZ: 0,
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 2000,
+      delay: (el, i) => 200 + 30 * i
+    }).add({
+      targets: '.find_your_paradise .letter',
+      translateY: [0,-30],
+      opacity: [1,0],
+      easing: "easeInExpo",
+      duration: 2000,
+      delay: (el, i) => 200 + 30 * i
+    });
+
+
+
+</script>
+
+</body>
+
+</html>

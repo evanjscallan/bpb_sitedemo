@@ -1,0 +1,226 @@
+html {scroll-behavior: smooth;}
+body{
+	scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	opacity: 0;
+  transition: opacity 3s;
+	}
+
+/*INDEX PAGE*/
+
+.outer{
+	display: flex;
+	flex-direction: column;
+	}
+
+#invis-page1 {
+	position: absolute;
+	bottom: 0;
+	}
+
+/* HERO CONTAINER */
+
+.hero_container{
+	object-fit: cover;
+	height: 60vh;
+	width: 100%;
+	}
+
+.hero_container img{
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	align-self: center;
+	overflow: hidden;
+	object-fit: cover;
+	-webkit-mask-image: linear-gradient(to top, transparent 1%, black 25%);
+ 	mask-image: linear-gradient(to top, transparent 1%, black 25%);	
+	}
+
+#mobile_beach{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 250vh; /*height 100vh instead */
+	transform: rotate(180deg);
+	object-fit: cover;
+	-webkit-mask-image: linear-gradient(to top, transparent 5%, black 70%);
+ 	mask-image: linear-gradient(to top, transparent 5%, black 70%);
+ 	z-index: 0;
+	}
+
+.tablet_beach{
+	display: none;
+	}
+
+/*-----*/
+/*SECTION 1 CONTAINER*/
+
+.section1-container{
+	font-family: Urbanist;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 40vh; /* maybe 60vh works better */
+	width: 100%;
+	}
+
+.find_your_paradise{
+	font-size: 1.5rem;
+	font-family: Urbanist;
+	letter-spacing: 5px;
+	color:  #8DA3A9;
+	}
+
+#downarrow {
+	position: relative;
+	top: 4rem;
+	width: 4rem;
+	}
+
+/*----*/
+/*SECTION 2 CONTAINER*/
+
+.section2-container{
+	font-family: Urbanist;
+	font-size: 1.5rem;
+	padding: 0 3rem 0 3rem;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	width: auto;
+	}
+
+#section2-title {
+	font-family: Urbanist;
+	color: black;
+	z-index: 2;
+
+	}
+
+.intro-paragraph {
+	margin: 0 0 4rem 0;
+	}
+
+#learn-more {
+	font-size: 20px;
+	border-radius: 20px 20px 20px 20px;
+	width: 10em;
+	margin: 0 0 2rem 0;
+	height: 4em;
+	position: relative;
+	}
+
+#learn-more: hover {
+	background-color: #8DA3A9 ;
+	}
+
+/*----*/
+/*SECTION 3 CONTAINER*/
+
+.section3-container{
+	font-family: Urbanist;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* maybe 60vh works better */
+	width: 100%;
+	}
+
+
+.contact-form {
+	border-radius: 10px 10px 10px 10px;
+	color: grey;
+	font-size: 20px;
+	font-family: Urbanist;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	height: 35rem;
+	width: 19rem;
+	margin: 4rem;
+	border: 1px solid black;
+	background-image: url("pattern_sand-01.jpg");	
+	text-align: center;
+	padding: 13px;
+	}
+
+.contact-form input {
+	margin: .3rem;
+	border-radius: 3px 3px 3px 3px;
+	}
+
+#submit {
+	height: 2em;
+	width: 80%;
+	}
+
+#submit: hover {
+	background-color: #8DA3A9;
+	}
+
+/* iPhone X 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+/* IPAD */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	#downarrow {
+	
+		top: 3rem;
+		width: 5rem;
+		}
+
+
+.hero_container img{
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	align-self: center;
+	overflow: hidden;
+	object-fit: cover;
+	-webkit-mask-image: linear-gradient(to top, transparent 2%, black 10%);
+ 	mask-image: linear-gradient(to top, transparent 2%, black 10%);	
+	}
+
+
+	.find_your_paradise{
+		font-size: 2rem;
+
+		}
+
+
+	.section2-container{
+		font-size: 2rem;
+		padding: 0 4rem 0 4rem;
+		}
+
+	#learn-more {
+		font-size: 20px;
+		border-radius: 20px 20px 20px 20px;
+		width: 10em;
+		margin: 0 0 15rem 0;
+		height: 4em;
+		position: relative;
+		}
+
+
+
+
